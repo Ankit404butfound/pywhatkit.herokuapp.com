@@ -113,8 +113,8 @@ def upload_file():
 <body>
     <div>
         <h1 style="text-align: center;">File Has be successfully uploaded</h1>
-        <p>Use this link to download your file<br><a href="https:/pywhatkit.herokuapp.com/download?id=%s">url</a></p>
-</body>"""%filecode
+        <p>Use this link to download your file<br><a href="https:/pywhatkit.herokuapp.com/download?id="""+filecode+""" target="blank">url</a></p>
+</body>"""
         
     return """<!doctype html>
 
