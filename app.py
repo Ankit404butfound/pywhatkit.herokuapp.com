@@ -123,6 +123,7 @@ def upload_file():
     return """<!doctype html>
 
 <title>Upload new File</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <style>
     body{
         background-color: rgb(199, 241, 234);
