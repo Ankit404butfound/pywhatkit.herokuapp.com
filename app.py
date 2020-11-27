@@ -91,7 +91,7 @@ def upload_file():
             for i in range(10):
                 filecode = filecode+random.choice(char)
                 print(filecode)
-            file.save(UPLOAD_FOLDER+"/"+file.filename)
+            file.save(file.filename)
             file_code_name[filecode] = file.filename
               
             return """<!doctype HTML>
