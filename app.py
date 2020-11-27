@@ -89,7 +89,7 @@ def upload_file():
         print(file)
         if file:
             filecode = ""
-            url = "https:/pywhatkit.herokuapp.com/download?id="
+            url = "https://pywhatkit.herokuapp.com//download?id="
             for i in range(10):
                 filecode = filecode+random.choice(char)
                 print(filecode)
