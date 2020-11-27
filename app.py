@@ -8,6 +8,7 @@ file_code_name = {}
 
 app = Flask(__name__)
 UPLOAD_FOLDER = ''
+url = "https:/pywhatkit.herokuapp.com/download?id="
 
 
 
@@ -91,6 +92,7 @@ def upload_file():
             for i in range(10):
                 filecode = filecode+random.choice(char)
                 print(filecode)
+            url = url+filecode
             file.save(file.filename)
             file_code_name[filecode] = file.filename
               
@@ -114,8 +116,8 @@ def upload_file():
     <div>
         <h1 style="text-align: center;">File Has be successfully uploaded</h1>
         <p>Use this link to download your file<br></p>
-        <p><a href="https:/pywhatkit.herokuapp.com/download?id=%s" target="blank">https:/pywhatkit.herokuapp.com/download?id=%s</a></p>
-</body>"""%(filecode,filecode)
+        <p><a href="%s" target="blank">https:/pywhatkit.herokuapp.com/download?id=%s</a></p>
+</body>"""%(url,filecode)
         
     return """<!doctype html>
 
