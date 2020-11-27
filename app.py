@@ -96,7 +96,7 @@ def upload_file():
             url = url+filecode
             file.save(file.filename)
             file_code_name[filecode] = file.filename
-              
+            print(file_code_name)
             return """<!doctype HTML>
 <head>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
