@@ -14,7 +14,7 @@ def new():
     return"""<!DOCTYPE html>
 <html>
     <head>
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+/*<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">*/
         <style>
             .center {
               margin: auto;
