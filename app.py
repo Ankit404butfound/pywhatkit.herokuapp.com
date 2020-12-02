@@ -12,19 +12,23 @@ UPLOAD_FOLDER = ''
 @app.route("/")
 def new():
     return"""<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
-        <style>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+      <meta name="theme-color" content="#000000" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">     
+<style>
             .center {
               margin: auto;
-              width: 70%;
+              width: 60%;
               border: 3px;
               padding: 10px;
             }
             
             .bg{
                 /*background-image: url("C:/Users/pc/Desktop/bg3.png");*/
-                background-color: rgb(50, 50, 50);
+                background-color: rgb(37, 37, 37);
             }
             .basic-text{
                 text-align: left;
@@ -45,81 +49,153 @@ def new():
                 color: rgb(184, 245, 240);
             
             }
-            h3, b{
-                text-align: left;
-                color: rgb(133, 245, 230);
+            h3{
+                text-align: center;
+                background-color: rgb(49, 48, 48);
+                color: rgb(0, 255, 106);
+            }
+
+            b{
+                color: rgb(255, 255, 255)
             }
             ul{
                 text-align: center; 
             }
             .margn div{
-                margin: 70px auto;
+                margin: 60px auto;
             }
-            .onhover a:hover{
-                background-color: rgb(137, 144, 145);
+            .mid i:hover{
+                color:#ffffff;
             }
             h4{
-                color: rgb(139, 99, 248);
+                color: rgb(191, 134, 255);
             }
             .mid{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 9%;
-}
-
+                margin:10px auto;
+                text-align: center;
+                font-size: 40px;
+ 
+            } 
+            img{
+                width:100%;
+            }
         </style>
     </head>
-    <body class=bg>
-        <div class=basic-text>
-            <h1>PyWhatKit</h1>
+    <body class="bg">
+        <div class="basic-text">
+            <h1 style="background-color: rgb(58, 58, 58);">PyWhatKit</h1>
         </div>
-            <div class="onhover">
-                <div class=mid>
-                <a href="https://github.com/Ankit404butfound/PywhatKit" target="blank"><img src="https://raw.githubusercontent.com/Ankit404butfound/PyWhatKit/master/Images/github_i.png" style="width:30px;height:30px;"></a>
-                <a href="https://www.quora.com/What-was-one-of-the-first-things-you-made-with-Python/answer/Ankit-Raj-Mahapatra-3" target="blank"><img src="https://raw.githubusercontent.com/Ankit404butfound/PyWhatKit/master/Images/quora.png" style="width:30px;height:30px;"></a>
-                <img src="https://raw.githubusercontent.com/Ankit404butfound/PyWhatKit/master/Images/yt.png" style="width:30px;height:30px;">
+    
+            <div class="mid">
+                <a href="https://github.com/Ankit404butfound/PywhatKit" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://www.quora.com/What-was-one-of-the-first-things-you-made-with-Python/answer/Ankit-Raj-Mahapatra-3" target="_blank"><i class="fa fa-quora"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
             </div>
-        </div>
-        
-           <div class=basic-text>
-            <div class=center>
-            <div class=margn>
-                <br><a href="https://pypi.org/project/pywhatkit/" target="blank">PyWhatKit</a> is a Python library with various
-                 helpful features. It is an easy to use library which does not requires you to do some additional setup. Currently it has about 100k+ downloads and counting and we regularly update and fix any bug. The source code of this library can be found on <a href="https://github.com/Ankit404butfound/PywhatKit">GitHub</a>, you are free update/add some features to it and open a Pull Request, we will review it and include that feature in the next update if the feature was found to be relavent and helpful.</p>
-                <div>
-                    <h2>Installation</h2>
-                    <p>This library can be installed by the pip command, open you command prompt and type in the following command...</p>
-                    <code>pip install pywhatkit</code>
-                </div>
-                <div>
-                    <h2>Functions of this library</h2>
-                    <p>First import the library using the command <code>import pywhatkit as kit</code> and then proceed to call the functions</p>
-                    <h3>kit.sendwhatmsg()</h3>
-                    <p>
-                        This function can be used to send WhatsApp message at certain time<br><br>
-                        <img src="https://raw.githubusercontent.com/Ankit404butfound/PyWhatKit/master/Images/sendwhatmsg.png" style="width: 900px;height: 500px;"><br>
+        <div style="text-align: center; color: rgb(217, 233, 236); font-size: 20px;">
+           
+            <div class="center">
+                <div class="margn">
+                    <br><a href="https://pypi.org/project/pywhatkit/" target="_blank">PyWhatKit</a> is a Python library with various
+                    helpful features. It is an easy to use library which does not requires you to do some additional setup. Currently it has about 100k+ downloads and counting and we regularly update and fix any bug. The source code of this library can be found on <a href="https://github.com/Ankit404butfound/PywhatKit">GitHub</a>, you are free update/add some features to it and open a Pull Request, we will review it and include that feature in the next update if the feature was found to be relavent and helpful.
+                    <div class="basic-text">
+                        <div>
+                            <h2>Installation</h2>
+                            <p>This library can be installed by the pip command, open you command prompt and type in the following command...</p>
+                            <code>pip install pywhatkit</code>
+                        </div>
+                
+                        <h2>Functions of this library</h2>
+                        <p>First import the library using the command <code>import pywhatkit as kit</code> and then proceed to call the functions</p>
+
+                        <h3 id="sendwhatmsg">kit.sendwhatmsg()</h3>
+                        <p>
+                            This function can be used to send WhatsApp message at certain time<br><br>
+                            <img src="https://raw.githubusercontent.com/Ankit404butfound/PyWhatKit/master/Images/sendwhatmsg.png"><br>
+                            <h4>The parameters are</h4>
+                            <b>phone_num</b> (required) - Phone number of target with country code
+                            <br><b>message</b> (required) - Message that you want to sendwhatmsg
+                            <br><b>time_hour</b> (required) - Hours at which you want to send message in 24 hour format
+                            <br><b>time_min</b> (required) - Minutes at which you want to send message
+                            <br><b>wait_time</b> (optional, val=20) - Seconds after which the message will be sent after opening the web
+                            <br><b>print_waitTime</b> (optional, val=True) - Will print the remaining time if set to true<br>
+                        </p>
+                        
+                        <p>
+                            <h4>Some common errors</h4>
+                            <b>CountryCodeException</b> - Check if the phone number passed into the paramter has <a href="https://en.wikipedia.org/wiki/List_of_country_calling_codes" target="_blank">country code</a><br>
+                            <b>Message not getting delivered</b> - Check internet speed and increase wait_time to 30 or above
+                            <b>CallTimeException</b> - The web takes some time to load so some delay is required, make sure the seconds left is greater than the wait_time<br>
+                            <b>SyntaxError</b> - Make sure the first two parameters are string and the rest are int
+                        </p>
+                        
+                        <br><h3 id="playonyt">kit.playonyt()</h3>
+                        <p>
+                            This function can be used to search and play a particular video on YouTube by using just the keyword, like "Shape of You song"<br><br>
+                            <img src="https://raw.githubusercontent.com/Ankit404butfound/PyWhatKit/master/Images/playonyt.png" ><br>
+                            <h4>The parameters are</h4>
+                            <b>topic</b> (required) - Topic or title that is related to the video
+                        </p>
+                        <p>
+                            <h4>Some common errors</h4>
+                            <b>Video not opening</b> - Make sure the topic exists or you have provided proper spelling
+                        </p>
+
+                        <br><h3 id="search">kit.search()</h3>
+                        <p>
+                        This function can be used to make a google search for any term<br><br>
+                        <img src="https://raw.githubusercontent.com/Ankit404butfound/PyWhatKit/master/Images/search.PNG">
                         <h4>The parameters are</h4>
-                        <b>phone_num</b> (required) - Phone number of target with country code
-                        <br><b>message</b> (required) - Message that you want to sendwhatmsg
-                        <br><b>time_hour</b> (required) - Hours at which you want to send message in 24 hour format
-                        <br><b>time_min</b> (required) - Minutes at which you want to send message
-                        <br><b>wait_time</b> (optional, val=20) - Seconds after which the message will be sent after opening the web
-                        <br><b>print_waitTime</b> (optional, val=True) - Will print the remaining time if set to true
-                    </p><br>
-                    <h3>kit.playonyt()</h3>
-                    <p>
-                        This function can be used to search and play a particular video on YouTube by using just the keyword, like "Shape of You song"<br><br>
-                        <img src="https://raw.githubusercontent.com/Ankit404butfound/PyWhatKit/master/Images/playonyt.png" style="width: 900px;height: 500px;"><br>
+                        <b>topic</b> (required) - Topic or title that you want to search
+                        </p>
+                        
+                        <br><h3 id="info">kit.info()</h3>
+                        
+                        <p>
+                        This function can be used to fetch information about any topic<br><br>
+                        <img src="https://raw.githubusercontent.com/Ankit404butfound/PyWhatKit/master/Images/info.PNG">
                         <h4>The parameters are</h4>
-                        <b>topic</b> (required) - Topic or title that is related to the video 
-                    </p>
+                        <b>topic</b> (required) - Topic or title that you want to get information about<br>
+                        <b>lines</b> (optional, val=3) - Number of lines that you want to print about it
+                        </p>
+                        <p>
+                            <h4>Some common errors</h4>
+                            <b>Not returning paragraph</b> - Make sure the topic exists and you are providing specific title
+                        </p>
+
+                        <br><h3 id="asciiart">kit.image_to_ascii_art()</h3>
+                        <p>
+                        This function can be used to convert any image to ASCII art<br><br>
+                        <img src="https://raw.githubusercontent.com/Ankit404butfound/PyWhatKit/master/Images/asciiart.PNG">
+                        <h4>The parameters are</h4>
+                        <b>imgpath</b> (required) - Path to the image that you want to convert<br>
+                        <b>output_file</b> (optional, val=pywhatkit_asciiart.txt") - File where you want to save the output characters
+                        </p>
+
+                        <p>
+                            <h4>Some common errors</h4>
+                            <b>File not found</b> - Make sure that the path of the image is valid
+                        </p>
+
+                        <br><h3 id="handwriting">kit.text_to_handwriting()</h3>
+                        <p>
+                        This function can be used to convert text to hand written characters, the character sets has been written by me<br><br>
+                        <img src="https://raw.githubusercontent.com/Ankit404butfound/PyWhatKit/master/Images/null.PNG">
+                        <h4>The parameters are</h4>
+                        <b>string</b> (required) - String that you want to convert to handwritten text<br>
+                        <b>rgb</b> (optional, val=[0,0,138]) - Color of the handwritten character in rgb format
+                        </p>
+
+                        <p>
+                            <h4>Some common errors</h4>
+                            <b>FUNCTION UNDER DEVELOPMENT</b>
+                        </p>
+                    </div>
                 </div>
             </div>
-    </div>
         </div>
     </body>
-</html>"""
+</html>
+"""
 
 
 @app.route('/old')
