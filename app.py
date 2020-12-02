@@ -21,7 +21,7 @@ def new():
 <style>
             .center {
               margin: auto;
-              width: 60%;
+              width: 90%;
               border: 3px;
               padding: 10px;
             }
