@@ -21,6 +21,7 @@ arr = arr + string.digits + "+,.-? "
 letss = string.ascii_letters
 
 app = Flask(__name__, static_url_path='')
+os.mkdir("static")
 
 
 def getimg(case,col):
