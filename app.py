@@ -110,7 +110,11 @@ def text_to_handwriting(string,rgb=[0,0,138]):
 @app.route("/handwriting")
 def api():
     text = request.args.get("text")
-    path = text_to_handwriting(str(text))
+    rgb = request.args.get("rgb")
+    if rgb:
+        path = text_to_handwriting(str(text),str(rgb).split(","))
+    else:
+        path = text_to_handwriting(str(text))
     return redirect(f"https://pywhatkit.herokuapp.com/{path}.png",302)
 
 
