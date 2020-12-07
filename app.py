@@ -289,24 +289,64 @@ def new():
                         <br><h3 id="handwriting">kit.text_to_handwriting()</h3>
                         <p>
                         This function can be used to convert text to hand written characters, the character sets has been written by me<br><br>
-                        <img src="https://raw.githubusercontent.com/Ankit404butfound/PyWhatKit/master/Images/null.PNG">
+                        <img src="https://raw.githubusercontent.com/Ankit404butfound/PyWhatKit/master/Images/text_to_handwriting.PNG">
                         <h4>The parameters are</h4>
                         <b>string</b> (required) - String that you want to convert to handwritten text<br>
-                        <b>rgb</b> (optional, val=[0,0,138]) - Color of the handwritten character in rgb format
-                        </p>
-
-                        <p>
-                            <h4>Some common errors</h4>
-                            <b>FUNCTION UNDER DEVELOPMENT</b>
+                        <b>save_to</b> (optional, val = "pywhatkit.png") - Path where the image will be saved<br>
+                        <b>rgb</b> (optional, val = [0,0,138]) - Color of the handwritten character in rgb format
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+        <div style="text-align: right;">
+            <a href="about-me">About me</a>
+        </div>
     </body>
 </html>
 """
 
+@app.route("/about-me")
+def me():
+    return """<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .page-content{
+                background-image: url("https://qphs.fs.quoracdn.net/main-qimg-344fafc838d1be7011f7b926f4583cde");
+            }
+
+            .page-text{
+                text-align: center;
+                color: rgb(200, 255, 241);
+                font-size: 20px;
+                margin:100px auto;
+            }
+
+            h1{
+                text-decoration: underline;
+                }
+
+            a{
+                color: rgb(110, 185, 155);
+            }
+
+    </style>
+    </head>
+    <body class=page-content>
+        <h1 style="color:rgb(16, 223, 238)"; align="center"; >
+            ANKIT RAJ MAHAPATRA
+        </h1>
+        <div class=page-text>
+            <p>Hello there, I am Ankit Raj aka Ankit Raj Mahpatra, I am a first-year BTech student.</p>
+            <p>I know a bit of <a href="https://www.python.org" target="blank">Python</a>, <a href="https://www.arduino.cc" target="blank">Arduino</a> and currently learning HTML-CSS.</p>
+            <p>I am the creator of <a href="https://pypi.org/project/pywhatkit/" target="blank">PyWhatKit</a> which has over 100k userbase till now.</p>
+            <p>I have a <a href="https://github.com/Ankit404butfound" target="blank">GitHub account</a> where I share most of my projects, there are some basic CS projects only.</p>
+            <p>Currently, I am living in Delhi and I have been to almost 5 states of India.</p>
+
+        </div>
+    </body>
+</html>"""
 
 @app.route('/old')
 def index():
