@@ -117,6 +117,9 @@ def api():
         path = text_to_handwriting(str(text))
     return redirect(f"https://pywhatkit.herokuapp.com/{path}.png",302)
 
+@app.route("/request-feature")
+def new_feature():
+    return redirect("https://docs.google.com/forms/d/1gReJDTC7MpO-4wUqrByGibF5fFCSjMsUsQuB5nk2FjI/",302)
 
 
 @app.route("/")
