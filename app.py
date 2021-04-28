@@ -7,6 +7,7 @@ import numpy as np
 from PIL import Image
 import cv2
 import random
+import requests
 
 char = string.ascii_lowercase
 file_code_name = {}
