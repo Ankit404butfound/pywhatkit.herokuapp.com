@@ -536,6 +536,28 @@ def upload_file():
 </body>"""
 
 
+@app.route('/playonyt')
+def playonyt():
+    """Will play video on following topic, takes about 10 to 15 seconds to load"""
+    topic = request.args.get("topic")
+    url = 'https://www.youtube.com/results?q=' + topic
+    count = 0
+    cont = requests.get(url)
+    data = cont.content
+    data = str(data)
+    lst = data.split('"')
+    for i in lst:
+        count+=1
+        if i == 'WEB_PAGE_TYPE_WATCH':
+            break
+    if lst[count-5] == "/results":
+        raise Exception("No video found.")
+    
+    #print("Videos found, opening most recent video")
+    #web.open("https://www.youtube.com"+lst[count-5])
+    return "https://www.youtube.com"+lst[count-5]
+
+
 
 if __name__ == '__main__':
     app.run(host= '0.0.0.0')
