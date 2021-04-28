@@ -9,6 +9,7 @@ import cv2
 import random
 import requests
 
+
 char = string.ascii_lowercase
 file_code_name = {}
 
