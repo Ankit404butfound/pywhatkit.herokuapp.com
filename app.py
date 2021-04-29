@@ -664,9 +664,9 @@ def rkit():
                             <img src="https://raw.githubusercontent.com/Ankit404butfound/Remote_Mouse_Keyboard/main/Images/startt.PNG"><br><br>
                             Now get the IPV4 address of your PC, on windows you can get it by typing "ipconfig" on command prompt, relavent command for all OS.<br><br>
                             <img src="https://raw.githubusercontent.com/Ankit404butfound/Remote_Mouse_Keyboard/main/Images/ip.PNG"><br><br>
-                            Now open any browser on your phone and type <code>IPV4_address:8000</code>cand hit enter.<br><br>
+                            Now open any browser on your phone and type <code>IPV4_address:8000</code> and hit enter.<br><br>
                             <img src="https://raw.githubusercontent.com/Ankit404butfound/Remote_Mouse_Keyboard/main/Images/phn.PNG"><br><br>
-                            Move your mouse over the grey area, your cursor should also move.
+                            Move your finger over the grey area, your cursor should also move.
                             Report any issue on GitHub or directly contact us on <a href="https://discord.gg/uwznv4jKgk">Discord</a>
                             
                         </p>
