@@ -561,5 +561,125 @@ def playonyt():
 
 
 
+@app.route("/remote-kit")
+def rkit():
+    return """
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+      <meta name="theme-color" content="#000000" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">     
+<style>
+            .center {
+              margin: auto;
+              width: 90%;
+              border: 3px;
+              padding: 10px;
+            }
+            
+            .bg{
+                /*background-image: url("C:/Users/pc/Desktop/bg3.png");*/
+                background-color: rgb(37, 37, 37);
+            }
+            .basic-text{
+                text-align: left;
+                color: rgb(217, 233, 236);
+                font-size: 20px;
+                align-content: center;
+            }
+            h1{
+                text-align: center;
+                color: rgb(16, 223, 238);
+                text-decoration: underline;
+            }
+            h2{
+                text-align: left;
+                color: rgb(40, 236, 194);
+            }
+            a{
+                color: rgb(184, 245, 240);
+            
+            }
+            h3{
+                text-align: center;
+                background-color: rgb(49, 48, 48);
+                color: rgb(0, 255, 106);
+            }
+
+            b{
+                color: rgb(255, 255, 255)
+            }
+            ul{
+                text-align: center; 
+            }
+            .margn div{
+                margin: 60px auto;
+            }
+            .mid i:hover{
+                color:#ffffff;
+            }
+            h4{
+                color: rgb(191, 134, 255);
+            }
+            .mid{
+                margin:10px auto;
+                text-align: center;
+                font-size: 40px;
+ 
+            } 
+            img{
+                width:100%;
+            }
+        </style>
+    </head>
+    <body class="bg">
+        <div class="basic-text">
+            <h1 style="background-color: rgb(58, 58, 58);">PyWhatKit - Feature test</h1>
+        </div>
+    
+            <div class="mid">
+                <a href="https://github.com/Ankit404butfound/Remote_Mouse_Keyboard" target="_blank"><i class="fa fa-github"></i></a>
+                
+            </div>
+        <div style="text-align: center; color: rgb(217, 233, 236); font-size: 20px;">
+           
+            <div class="center">
+                <div class="margn">
+                    <br><a href="https://github.com/Ankit404butfound/Remote_Mouse_Keyboard" target="_blank">RemoteKit</a> is an upcoming feature of PyWhatKit, it allows you to controll your PC wirelessly on same network, you can controll the PC without installing any thing on your phone, this feature is written in Python and JavaScript with front-end in HTML-CSS.<div class="basic-text">
+                        <div>
+                            <h2><u>Setup</u></h2>
+                            <p>In order to test this feature you need to <a href="https://github.com/Ankit404butfound/Remote_Mouse_Keyboard" target="_blank">download the code</a> and install few libraries, run the following command to install them</p>
+                            <code>pip install flask <br>
+                            pip install pyautogui</code> 
+                        </div>
+                
+                        <h2><u>Usage</u></h2>
+                        <p>First, make sure your PC and the phone that you want to control PC with, are on the same network, either connected to hotspot or WiFi<br><br>
+                            <img src="https://raw.githubusercontent.com/Ankit404butfound/Remote_Mouse_Keyboard/main/Images/wifi.PNG"><br><br>
+                            Now open command prompt in the same directory where you downloaded the codes and type the following and hit enter<br><br>
+                            <code>python RemoteKit.py</code><br><br>
+                            You should see something like this<br><br>
+                            <img src="https://raw.githubusercontent.com/Ankit404butfound/Remote_Mouse_Keyboard/main/Images/startt.PNG"><br><br>
+                            Now get the IPV4 address of your PC, on windows you can get it by typing "ipconfig" on command prompt, relavent command for all OS.<br><br>
+                            <img src="https://raw.githubusercontent.com/Ankit404butfound/Remote_Mouse_Keyboard/main/Images/ip.PNG"><br><br>
+                            Now open any browser on your phone and type <code>IPV4_address:8000</code>cand hit enter.<br><br>
+                            <img src="https://raw.githubusercontent.com/Ankit404butfound/Remote_Mouse_Keyboard/main/Images/phn.PNG"><br><br>
+                            Move your mouse over the grey area, your cursor should also move.
+                            Report any issue on GitHub or directly contact us on <a href="https://discord.gg/uwznv4jKgk">Discord</a>
+                            
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+"""
+
+
+
 if __name__ == '__main__':
     app.run(host= '0.0.0.0')
