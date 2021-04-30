@@ -675,6 +675,8 @@ def rkit():
                             Report any issue on GitHub or directly contact us on <a href="https://discord.gg/uwznv4jKgk">Discord</a>
                             
                         </p>
+                        
+                        <a href="https://docs.google.com/forms/d/1PxH_dngvihvNF3sH5wJ2X4NJmJ_SxAOp_rQ_z1VhV3M/">Let us know if it worked or not</a>
 
                     </div>
                 </div>
