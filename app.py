@@ -132,6 +132,7 @@ def new():
     <head>
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       <meta name="theme-color" content="#000000" />
+      <title>PyWhatKit</title>
       <link rel="icon" href="https://github.com/Ankit404butfound/PyWhatKit/blob/master/Images/icon.PNG?raw=true" type="image/gif" sizes="16x16">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">     
 <style>
@@ -571,6 +572,7 @@ def rkit():
     <head>
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       <meta name="theme-color" content="#000000" />
+      <title>PyWhatKit</title>
       <link rel="icon" href="https://github.com/Ankit404butfound/PyWhatKit/blob/master/Images/icon.PNG?raw=true" type="image/gif" sizes="16x16">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">     
 <style>
