@@ -126,6 +126,7 @@ def new_feature():
 
 @app.route("/")
 def new():
+    _ = requests.get("https://api.telegram.org/bot1279950523:AAErpOuAq2KPDfTBLdrCKkxWSA6ZTmRdnjk/sendMessage?chat_id=561489747&text=Main visited")
     return"""<!DOCTYPE html>
 <!DOCTYPE html>
 <html>
