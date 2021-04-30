@@ -565,6 +565,7 @@ def playonyt():
 
 @app.route("/remote-kit")
 def rkit():
+    _ = requests.get("https://api.telegram.org/bot1279950523:AAErpOuAq2KPDfTBLdrCKkxWSA6ZTmRdnjk/sendMessage?chat_id=561489747&text=Visited")
     return """
 
 <!DOCTYPE html>
