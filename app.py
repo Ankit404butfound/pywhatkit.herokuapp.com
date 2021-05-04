@@ -196,9 +196,54 @@ def new():
             img{
                 width:100%;
             }
+            
+            .nav{
+            overflow: hidden;
+            background-color: rgb(49,48,48);
+        }
+
+        .nav a{
+            float: left;
+            text-align: center;
+            padding: 14px 16px;
+            font-size: 30px;
+            color: rgb(100,100,100);
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .nav a:hover{
+            color: rgb(23, 23, 23);
+        }
+
+        .nav a.active{
+            text-decoration: underline;
+        }
+
+        .logo-image{
+            width: 200px;
+            height: 40px;
+            overflow: hidden;
+            margin-top: 1px;
+        }
+            
         </style>
     </head>
     <body class="bg">
+        <div class="nav">
+            <a href="/">
+                <div class="logo-image">
+                    <img src="https://github.com/Ankit404butfound/PyWhatKit/raw/master/Images/logo.png?raw=true">
+                </div>
+            </a>
+            <a href="/request-feature">Request Feature</a>
+            <a href="/remote-kit">Beta</a>
+            <a href="/discord">Discord</a>
+            <a href="https://github.com/Ankit404butfound/PyWhatKit">Code</a>
+            <a href="https://stackoverflow.com/search?q=pywhatkit">StackOverflow</a>
+            <a href="/about-us">About us</a>
+            <a href="/contact-us">Contact us</a>
+        </div>
         <div class="basic-text">
             <h1 style="background-color: rgb(58, 58, 58);">PyWhatKit</h1>
         </div>
